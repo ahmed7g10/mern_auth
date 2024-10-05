@@ -13,7 +13,7 @@ const SignupPage = () => {
   const navigate=useNavigate()
   const handleSubmit=async(e)=>{
     e.preventDefault();
-    if(!password||!name||email){
+    if(!password||!name||!email){
       return;
     }
     try {
