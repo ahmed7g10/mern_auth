@@ -22,6 +22,8 @@ const signup=async(req,res)=>{
         const salt=await bcryptjs.genSalt(10);
         const hashpassword=await bcryptjs.hash(password,salt)
         const verificationToken=await Math.floor(100000+Math.random()*90000).toString();
+        console.log(verificationToken);
+        
         const user=new UserModel({
             email,password:hashpassword,
             name,verificationToken,
