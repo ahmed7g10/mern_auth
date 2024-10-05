@@ -14,8 +14,7 @@ const App = () => {
   useEffect(()=>{
     checkAuth();
   },[checkAuth])
-  console.log(isAuth);
-  console.log(user);
+  
   
   const ProtectedRoute = ({ children }) => {
     const { isAuth, user } = useAuthStore();
