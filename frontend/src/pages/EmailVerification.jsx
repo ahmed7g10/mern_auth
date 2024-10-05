@@ -23,7 +23,6 @@ const EmailVerification = () => {
             
         }        
     }
-    const [loading,setLoading]=useState(false)
     const handleChange=(index,value)=>{
         const newCode = [...code];
 
